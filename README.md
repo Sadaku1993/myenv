@@ -10,7 +10,7 @@ OpenAI Gymの自前環境の作成方法[参照](https://qiita.com/ohtaman/items
 gym.Envのクラスは以下のメソッドとプロパティを実装する必要がある
 
 |メソッド|解説|
-|:--|--:|
+|:--|:--|
 |_setp(self, action)|actionを実行し、結果を返す|
 |_reset(self)|状態を初期化し、初期の観測値を返す|
 |_render(self, mode='human', close=False)|環境を可視化する|
