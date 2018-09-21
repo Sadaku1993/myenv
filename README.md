@@ -16,3 +16,18 @@ gym.Envのクラスは以下のメソッドとプロパティを実装する必�
 |_render(self, mode='human', close=False)|環境を可視化する|
 |_close(self)|環境を閉じて後処理をする|
 |_seed(self, seed=none)|ランダムシードを固定する|
+
+|プロパティ|解説|
+|:--|:--|
+|action_space|行動(Action)の張る空間|
+|observation_space|観測値(Observation)の張る空間|
+|reward_range|報酬の最小値を最大値のリスト|
+
+closeと_seedは必須ではない
+renderの引数にmodeがあるが、これは任意の文字列
+- human:人間のためにコンソールか画面に表示. 戻り値なし
+- rgb_array:画面のRGB値をnumy.array(x, y, 3)で返す
+- ansi:文字列もしくはStringIOを返す
+
+# 自作環境
+[myenv/env.py]()
