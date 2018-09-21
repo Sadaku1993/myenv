@@ -29,5 +29,15 @@ renderの引数にmodeがあるが、これは任意の文字列
 - rgb_array:画面のRGB値をnumy.array(x, y, 3)で返す
 - ansi:文字列もしくはStringIOを返す
 
-# 自作環境
+## 自作環境
 [myenv/env.py]()
+
+## gymに登録する
+上記のクラスのままでも使えるが, 以下の様にgym.envs.registration.registerを使うと,
+gym.make('....')で自作の環境を呼び出すことができる. プログラム実行初期に呼び出したいため, __ini__.py内に記述する．
+
+myenv/__init__.py
+
+```
+from gym.envs.registration import register
+```
