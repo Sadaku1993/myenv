@@ -38,6 +38,6 @@ gym.make('....')で自作の環境を呼び出すことができる. プログ�
 
 myenv/__init__.py
 
-```
+```python
 from gym.envs.registration import register
 ```
