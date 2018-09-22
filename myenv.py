@@ -134,7 +134,8 @@ class MyEnv(gym.Env):
             return True
         else:
             return False
-
-     def _find_pos(self, field_type):
-        return np.array(list(zip(*np.where(self.MAP == self.FIELD_TYPES.index(field_type)))))
-...
+    
+    def _find_pos(self, field_type):
+        return np.array(list(zip(*np.where(
+            self.MAP == self.FIELD_TYPES.index(field_type)
+    ))))
