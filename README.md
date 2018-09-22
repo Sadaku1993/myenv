@@ -54,5 +54,5 @@ idは<環境名>-v<version>の形式である必要がある
 import myenv
 import gym
 
-env = gym.make('myenv-v0)
+env = gym.make('myenv-v0')
 ```
