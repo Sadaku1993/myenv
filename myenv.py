@@ -37,7 +37,6 @@ class MyEnv(gym.Env):
                 low=0,
                 high=len(self.FIELD_TYPES),
                 shape=self.MAP.shape)
-        )
         self.reward_range = [-.1, 100.]
         self._reset()
 
